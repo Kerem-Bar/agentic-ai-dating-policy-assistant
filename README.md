@@ -40,7 +40,7 @@ agentic-ai-dating-policy-assistant/
 ├── results.jsonl                       # Recorded Benchmark Outputs, Citations & Execution Traces
 ├── requirements.txt                    # Pinned Runtime Dependencies (Pydantic v2+)
 ├── report.pdf                          # 4-Page Technical & Empirical Evaluation Report
-└── README.md                           # System Documentation, Reproducibility & AI Disclosure
+└── README.md                           # System Documentation & Reproducibility
 ```
 
 ---
@@ -407,21 +407,9 @@ Executed separately from the gold content cases, all three engineering controls 
 
 ---
 
-## 🤖 AI Disclosure & Verification Record
-
-- **Tools Used:** Generative AI (**Gemini**) assisted with text expansion, boilerplate code scaffolding, benchmark scenario co-design, and LaTeX/Markdown formatting.
-- **Scope of Assistance:**
-  - Expanding student-organized paragraph topics and policy rules into formal prose across `corpus/doc_01.txt`–`doc_06.txt`, and formalizing the paragraph-level (`\n\n`) chunking implementation and retrieval rationale.
-  - Structuring Pydantic schema classes, JSONL evaluation loops, and formatting `report.pdf` and `README.md`.
-  - Co-designing and drafting the 12 benchmark scenarios and query phrasing (`gold.jsonl`), as well as refining analytical explanations based on observed failure modes.
-- **Human Verification & Accountability:**
-  - **Kerem Bar** conceived the domain rules, thematic paragraph structure, system architecture, and scoring logic, co-designed the evaluation scenarios, and reviewed and approved the chunking strategy.
-  - All 12 expected answers and evidence IDs in `gold.jsonl` were manually verified line-by-line against `doc_01.txt`–`doc_06.txt`.
-  - All system outputs, citation provenance, score calculations, and failure modes in `results.jsonl` were independently audited and verified.
-
----
 
 ## 👤 Author
 
-**Kerem Bar** (Student ID: `021792239`)  
-*Department of Information Science, Bar-Ilan University*
+**Kerem Bar**<br>
+*Master's Student in Applied Data Science & AI Applications*<br>
+*Department of Information Science & Artificial Intelligence Applications, Bar-Ilan University*
